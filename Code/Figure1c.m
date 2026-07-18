@@ -19,7 +19,7 @@ GridsN=unique(dis10(:,4));
 F=@(p,xdata)p(1)*power((1-exp(-xdata/p(3))),p(2));
 
 %% figure
-igrid=491; %example grid
+igrid=1; %example grid
 ID=GridsN(igrid,1);
 [x,y]=find(grids==ID);
 data=dis_na(dis_na(:,4)==ID,:);data(data(:,5)==0,:)=[];
